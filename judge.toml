@@ -1,0 +1,9 @@
+[jobs.lab3]
+
+image = { source = "dockerfile", path = "."}
+
+run = [
+  "export CLASSPATH='./antlr-4.9.3-complete.jar:$CLASSPATH'",
+  "java Main $input $ir",
+]
+
